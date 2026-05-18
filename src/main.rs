@@ -22,8 +22,8 @@ struct Exec;
 
 impl Forager for Exec {
     const NAME: &'static str = "exec";
-    const DESCRIPTION: &'static str = "Executes a shell command; produces no measurements";
-    const MEASUREMENTS_DOC: &'static str = "This forager emits no measurements.";
+    const DESCRIPTION: &'static str = "Executes a shell command; produces no outcomes";
+    const OUTCOMES_DOC: &'static str = "This forager emits no outcomes.";
     type Inputs = ExecInputs;
 
     fn run(inputs: ExecInputs) -> Result<Vec<ForagerPluginOutput>> {
