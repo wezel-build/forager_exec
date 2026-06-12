@@ -5,7 +5,7 @@ use anyhow::{Context, Result, anyhow};
 use forager_sdk::Forager;
 use schemars::JsonSchema;
 use serde::Deserialize;
-use wezel_types::ForagerPluginOutput;
+use forager_sdk::ForagerPluginOutput;
 
 #[derive(Deserialize, JsonSchema)]
 struct ExecInputs {
