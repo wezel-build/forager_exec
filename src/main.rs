@@ -2,10 +2,9 @@ use std::collections::HashMap;
 use std::process;
 
 use anyhow::{Context, Result, anyhow};
-use forager_sdk::Forager;
+use forager_sdk::{Forager, ForagerPluginOutput};
 use schemars::JsonSchema;
 use serde::Deserialize;
-use forager_sdk::ForagerPluginOutput;
 
 #[derive(Deserialize, JsonSchema)]
 struct ExecInputs {
